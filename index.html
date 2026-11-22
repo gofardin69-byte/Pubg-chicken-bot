@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Chicken Bot — Demo Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="eyebrow">CLOUD CONTROL PANEL</div>
+      <h1>🐔 Chicken Bot</h1>
+      <p>Five-hour timer · Demo score manager</p>
+      <span class="pill"><i></i> Dashboard online</span>
+    </header>
+
+    <section class="card timer-card">
+      <div class="section-head"><h2>Five-hour run</h2><span id="stateLabel" class="state">STOPPED</span></div>
+      <div id="countdown" class="countdown">05:00:00</div>
+      <p id="timerNote" class="muted">Ready to start a five-hour demo session.</p>
+      <div class="actions">
+        <button id="startBtn" class="primary">Start 5 hours</button>
+        <button id="stopBtn" class="secondary">Stop</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Dashboard password</h2>
+      <p class="muted">Enter the password configured by the project owner in the cloud service settings.</p>
+      <div class="inline-form"><input id="password" type="password" autocomplete="current-password" placeholder="Dashboard password"><button id="savePassword" class="secondary">Use password</button></div>
+      <p id="authMessage" class="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>Demo accounts</h2>
+      <div id="players" class="players"><p class="muted">Loading scores…</p></div>
+      <div class="inline-form points-form">
+        <select id="playerSelect"><option value="1">Main account (demo)</option><option value="2">Second account (demo)</option></select>
+        <input id="amount" type="number" min="1" max="1000" value="1" aria-label="Demo points">
+        <button id="addPoints" class="primary">Add points</button>
+      </div>
+      <p id="pointsMessage" class="message"></p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><h2>Activity log</h2><button id="refreshBtn" class="tiny">Refresh</button></div>
+      <ul id="logs" class="logs"><li class="muted">No activity yet.</li></ul>
+    </section>
+
+    <footer>Demo software only. It does not sign in to PUBG, access game servers, read player accounts, or send real Chicken gifts.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

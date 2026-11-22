@@ -1,12 +1,10 @@
 {
-  "name": "pubg-chicken-bot",
-  "version": "1.0.0",
-  "description": "PUBG Chicken competition dashboard",
+  "name": "pubg-chicken-dashboard-demo",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Five-hour cloud timer and demo score dashboard; no PUBG account integration.",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.21.2"
-  }
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "express": "^4.21.2" }
 }
