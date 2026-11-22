@@ -1,0 +1,12 @@
+{
+  "name": "pubg-chicken-bot",
+  "version": "1.0.0",
+  "description": "PUBG Chicken competition dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
