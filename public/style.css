@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #101827, #172b24, #090d16);
+  color: white;
+  padding: 25px;
+}
+
+.container {
+  max-width: 650px;
+  margin: 30px auto;
+  background: #182334;
+  padding: 28px;
+  border-radius: 20px;
+  border: 1px solid #344b49;
+  box-shadow: 0 10px 35px #0008;
+}
+
+h1 {
+  text-align: center;
+  color: #f6c945;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aab8c7;
+}
+
+.status {
+  background: #203d32;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 25px 0;
+  color: #7ef0a2;
+}
+
+.dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: #46e681;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+h2 {
+  color: #f6c945;
+  font-size: 20px;
+}
+
+.players {
+  display: grid;
+  gap: 12px;
+}
+
+.player {
+  background: #26364a;
+  border-radius: 12px;
+  padding: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score {
+  color: #f6c945;
+  font-weight: bold;
+}
+
+.panel {
+  background: #202f40;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 7px;
+}
+
+select, input, button {
+  width: 100%;
+  padding: 13px;
+  border-radius: 9px;
+  border: none;
+  font-size: 16px;
+}
+
+select, input {
+  background: #101827;
+  color: white;
+}
+
+button {
+  margin-top: 20px;
+  background: #e5b72e;
+  color: #151515;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffda58;
+}
+
+#message {
+  color: #7ef0a2;
+}
+
+.notice {
+  color: #aab8c7;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 25px;
+}
